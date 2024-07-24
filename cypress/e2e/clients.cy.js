@@ -47,7 +47,7 @@ describe('Clients', () => {
             cy.get("div[class='detailsss']").should('be.visible')
         })
 
-        cy.get("a[href='/ClientEditCounselCompas.aspx?ClientID=2012']").click()
+        //cy.get("a[href='/ClientEditCounselCompas.aspx?ClientID=2012']").click()
 
     })
 

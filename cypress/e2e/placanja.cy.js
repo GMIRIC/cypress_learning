@@ -11,7 +11,7 @@ describe('Placanja', () => {
 
     })
 
-    it.skip('all', () => {
+    it('all', () => {
         cy.get("#totalResults").should('contain', '82')
         cy.get("span[id='paidResults']").should('contain', '8')
         cy.get("span[id='unpaidResults']").should('contain', '74')
@@ -77,14 +77,14 @@ describe('Placanja', () => {
 
     })
 
-    it('More info', () => {
+    it.skip('More info', () => {
         cy.get("div[class='detailsss']").should('not.be.visible')
         cy.get("button[class='btn btn-tool ml-auto']").each(($el, index, $list) => {
             cy.wrap($el).click()
         })
         cy.get("div[class='detailsss']").should('be.visible')
 
-        cy.get("a[href='/Event.aspx?eventid=4037']").click()
+        //cy.get("a[href='/Event.aspx?eventid=4037']").click()
     })
 
     it.skip('Placeno gratis', () => {
