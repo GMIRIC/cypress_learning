@@ -1,1 +1,1 @@
-# b2b_commerce_training
+# cypress_learning
