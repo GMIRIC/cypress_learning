@@ -5,19 +5,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
-<<<<<<< HEAD
         uses: actions/checkout@v4
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
-=======
-        uses: actions/checkout@v4.1.7
-      - name: Cypress.io
-        uses: cypress-io/github-action@v6.5.0
-        with:
-          project: ./cypress
-          browser: chrome
-          build: npm run build
-          start: npm start
->>>>>>> ff3e0e25f1dc5a813107ab2caa146cdeef4f5584
