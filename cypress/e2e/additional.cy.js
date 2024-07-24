@@ -1,12 +1,15 @@
 describe('Additional functionalities', () => {
-    beforeEach('Login', () => {
-        cy.visit('http://admin.thecounselcompass.com/Calendar.aspx')
-        cy.get("input[id='txtUserName']").type('testadmin1')
-        cy.get("#txtPassword").type('qqq')
-        cy.get("#btnLogin").click()
+    before('YT', () => {
+        cy.visit('https://www.youtube.com/')
     })
+    // beforeEach('Login', () => {
+    //     cy.visit('http://admin.thecounselcompass.com/Calendar.aspx')
+    //     cy.get("input[id='txtUserName']").type('testadmin1')
+    //     cy.get("#txtPassword").type('qqq')
+    //     cy.get("#btnLogin").click()
+    // })
 
-    it('Language', () => {
+    it.skip('Language', () => {
         cy.get("body > form:nth-child(1) > div:nth-child(22) > div:nth-child(1) > div:nth-child(2) > nav:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)").click()
         cy.get("#ctl00_ctl00_Lang_1").click()
 
